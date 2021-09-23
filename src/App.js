@@ -9,7 +9,7 @@ import ProtectedRoutes from './Components/Helper/ProtectedRoutes';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserStorage } from './UserContext';
 
-const App = () => {
+function App() {
   return (
     <div>
       <BrowserRouter>
@@ -25,6 +25,6 @@ const App = () => {
       </BrowserRouter>
     </div>
   );
-};
+}
 
 export default App;
