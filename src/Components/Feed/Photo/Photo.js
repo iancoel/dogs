@@ -5,7 +5,6 @@ import useFetch from '../../../Hooks/useFetch';
 import Error from '../../Helper/Error';
 import Loading from '../../Helper/Loading';
 import PhotoContent from './PhotoContent';
-import styles from './Photo.module.css';
 
 const Photo = () => {
   const { id } = useParams();
