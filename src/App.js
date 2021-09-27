@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { UserStorage } from './UserContext';
 import Photo from './Components/Feed/Photo/Photo';
 import UserProfile from './Components/User/UserProfile';
+import NotFound from './Components/NotFound';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <ProtectedRoutes path="conta/*" element={<User />} />
             <Route path="foto/:id" element={<Photo />} />
             <Route path="perfil/:user" element={<UserProfile />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </UserStorage>
